@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sketch Generater</title>
+        <link href="/static/css/tool.css" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/header.css" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/footer.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        {% include "header.html" %}
+        <section>
+            <div class="main">
+                <h2>Upload Image</h2>
+                <form action="/sketch/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div id="dropbox">
+                        <p id="heading">Select Image Here</p>
+                        <p>Files Supported: png and jpg</p>
+                        <label for="filein">
+                            <input type="file" id="filein" name="image" accept=".png,.jpg"/>
+                        </label> 
+                    </div>
+                    <div id="sbbox">
+                        <input type="submit" value="Sketch" id="sb"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+        {% include "footer.html" %}
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image To Pencil Sketch Converter</title>
+        <link href="/static/css/home.css" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/header.css" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/footer.css" type="text/css" rel="stylesheet"/>
+        <script src="/static/js/home.js" defer></script>
+    </head>
+    <body>
+        {% include "header.html" %}
+        <div id="banner">
+            <p>Best AI Tool To Convert Images Into Pencil Sketch.</p>
+            <a href="/tool">View Tool</a>
+        </div>
+        <div id="sep">
+            <h2>How This Tool Works</h2>
+        </div>
+        <div id="working">
+            <img src="/static/images/input.jpg" alt="wotking" id="workimg" />
+        </div>
+        <div id="btnbox">
+            <a href="/tool">View Tool</a>
+        </div>
+        {% include "footer.html" %}
+    </body>
+</html>

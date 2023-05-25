@@ -1,0 +1,42 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+}
+section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+#main img{
+    width: 250px;
+}
+#main p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:500px){
+    #main{
+        width: 80%;
+    }
+}

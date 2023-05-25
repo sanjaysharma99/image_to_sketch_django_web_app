@@ -1,0 +1,43 @@
+header{
+    background-color: black;
+    height: 50px;
+}
+header img{
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+header ul{
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    margin-left: 75%;
+}
+header ul li{
+    display: inline;
+    margin-left: 10px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+header ul li a:hover{
+    color: aqua;
+}
+@media screen and (max-width:790px){
+    header ul{
+        margin-left: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    header ul{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width:400px){
+    header ul{
+        margin-left: 40%;
+    }
+}

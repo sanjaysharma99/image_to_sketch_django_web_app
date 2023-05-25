@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sketch</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/sketch.css' %}">
+        <link href="/static/css/header.css" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/footer.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        {% include "header.html" %}
+        <section>
+            <div id="main">
+                <img src="{{ image }}" alt="My Image">
+                <p>Your sketch is ready. You can download your<br/>
+                 sketch by below download button.</p>
+                 <a class="btn" href="{{ image }}" download>Download</a>
+            </div>
+        </section>
+        {% include "footer.html" %}
+    </body>
+</html>
